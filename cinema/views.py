@@ -137,12 +137,12 @@ class MovieViewSet(
             ),
             OpenApiParameter(
                 name="genres",
-                type={"type": "list", "items": {"type": "number"}},
+                type={"type": "string"},
                 description="The genres of the movie",
             ),
             OpenApiParameter(
                 name="actors",
-                type={"type": "list", "items": {"type": "number"}},
+                type={"type": "string"},
                 description="The actors of the movie",
             )
         ]

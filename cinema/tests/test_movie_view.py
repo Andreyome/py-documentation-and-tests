@@ -29,7 +29,7 @@ def detail_view_image(movie_id):
 def sample_movie(**params):
     defaults = {
         "title": "Movie Title",
-        "description": 1999,
+        "description": "description",
         "duration": 5,
     }
     defaults.update(params)
@@ -146,7 +146,7 @@ class AuthenticatedNonAdminMovieViewTest(TestCase):
     def test_create_movie(self):
         payload = {
             "title": "Movie Title",
-            "description": 1999,
+            "description": "description",
             "duration": 5,
         }
 
